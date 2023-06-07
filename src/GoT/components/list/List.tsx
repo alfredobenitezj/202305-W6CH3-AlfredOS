@@ -1,10 +1,10 @@
-import { Card } from "../card/card";
+import { Card, PropCharacters } from "../card/card";
 
-export function CreateList() {
+export function CreateList({ item }: PropCharacters) {
   return (
     <div className="app container">
       <ul className="characters-list row list-unstyled">
-        <Card></Card>
+        <Card item={item}></Card>
       </ul>
     </div>
   );
