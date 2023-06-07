@@ -1,0 +1,77 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "tvShow": "Got",
+      "name": "Joffrey",
+      "family": "Baratheon",
+      "age": 16,
+      "isAlive": true,
+      "speech": "All of u'll die",
+      "regnarYears": 3
+    },
+    {
+      "id": 2,
+      "tvShow": "Got",
+      "name": "Jaime",
+      "family": "Lannister",
+      "age": 36,
+      "isAlive": true,
+      "speech": "First punch then ask",
+      "weaponUsed": "sword",
+      "skill": 8
+    },
+    {
+      "id": 3,
+      "tvShow": "Got",
+      "name": "Daenerys",
+      "family": "Targaryen",
+      "age": 26,
+      "isAlive": true,
+      "speech": "First punch then ask",
+      "weaponUsed": "Dragons",
+      "skill": 6
+    },
+    {
+      "id": 4,
+      "tvShow": "Got",
+      "name": "Tyrion",
+      "family": "Lannister",
+      "age": 32,
+      "isAlive": true,
+      "speech": "Don't know why but I think I'll die",
+      "advisedCharacter": {
+        "id": 3,
+        "tvShow": "Got",
+        "name": "Daenerys",
+        "family": "Targaryen",
+        "age": 26,
+        "isAlive": true,
+        "speech": "First punch then ask",
+        "weaponUsed": "Dragons",
+        "skill": 6
+      }
+    },
+    {
+      "id": 5,
+      "tvShow": "Got",
+      "name": "Bronn",
+      "family": "Blackwaters",
+      "age": 34,
+      "isAlive": true,
+      "speech": "I'm based",
+      "ballSuckerLevel": 0,
+      "servedCharacter": {
+        "id": 2,
+        "tvShow": "Got",
+        "name": "Jaime",
+        "family": "Lannister",
+        "age": 36,
+        "isAlive": true,
+        "speech": "First punch then ask",
+        "weaponUsed": "sword",
+        "skill": 8
+      }
+    }
+  ]
+}
