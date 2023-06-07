@@ -1,29 +1,27 @@
-import React from "react";
 import { AllCharacters } from "../../types/allCharacters";
 
 export type PropCharacters = {
   item: AllCharacters;
 };
 
-export function Card(Propcharacters) {
-  Propcharacters.map();
+export function Card({ item }: PropCharacters) {
   return (
     <li className="character col">
       <div className="card character__card">
         <img
-          src="public/imagen/no-one.jpg"
-          alt="Nombre y familia del personaje"
+          src={`img/${item.name.toLowerCase()}.jpg`}
+          alt={`${item.name} y ${item.family}`}
           className="character__picture card-img-top"
         />
         <div className="card-body">
           <h2 className="character__name card-title h4">
-            {} y {}
+            {item.name} y {item.family}
           </h2>
           <div className="character__info">
             <ul className="list-unstyled">
-              <li>Edad: {} años</li>
+              <li>Edad: {item.age} años</li>
               <li>
-                Estado:
+                Estado:{item.isAlive}
                 <i className="fas fa-thumbs-down"></i>
                 <i className="fas fa-thumbs-up"></i>
               </li>
@@ -31,7 +29,7 @@ export function Card(Propcharacters) {
           </div>
           <div className="character__overlay">
             <ul className="list-unstyled">
-              <li>Años de reinado: X</li>
+              <li>Años de reinado:X</li>
               <li>Arma: XXX</li>
               <li>Destreza: X</li>
               <li>Peloteo: X</li>
