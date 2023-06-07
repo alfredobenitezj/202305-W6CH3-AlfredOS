@@ -9,3 +9,9 @@ export const loadCharactersAsync = createAsyncThunk(
     return await repo.getAll();
   }
 );
+export const createCharacterAsync = createAsyncThunk<
+  Character,
+  { repo: ApiRepository<Character>; character: Character }
+>(actionTypes.create, async ({ repo, character }) => {
+  return await repo.create(character);
+});

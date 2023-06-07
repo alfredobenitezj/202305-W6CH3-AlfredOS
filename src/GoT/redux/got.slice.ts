@@ -2,10 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 import { AllCharacters } from "../types/allCharacters";
 
 export type CharacterState = {
-  character: AllCharacters[];
+  characters: AllCharacters[];
 };
 const initialState: CharacterState = {
-  character: [],
+  characters: [],
 };
 
 const characterslice = createSlice({
@@ -14,7 +14,7 @@ const characterslice = createSlice({
   reducers: {
     create: (state, { payload }) => ({
       ...state,
-      character: [...state.character, payload],
+      character: [...state.characters, payload],
     }),
     load: (state, { payload }) => ({
       ...state,
