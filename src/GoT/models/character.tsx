@@ -1,4 +1,5 @@
 export interface Character {
+  id: string | number;
   tvShow: string;
   name: string;
   family: string;

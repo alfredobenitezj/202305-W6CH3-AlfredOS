@@ -16,7 +16,11 @@ const characterslice = createSlice({
       ...state,
       character: [...state.character, payload],
     }),
+    load: (state, { payload }) => ({
+      ...state,
+      character: [payload],
+    }),
   },
 });
 export default characterslice.reducer;
-export const create = characterslice.actions;
+export const { create, load } = characterslice.actions;
